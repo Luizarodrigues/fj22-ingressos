@@ -9,13 +9,20 @@
         <table class="table table-hover ">
             <thead>
             <tr>
+            
                 <th class="text-center">Nome</th>
                 <th colspan="4" class="text-center">Ações</th>
+                <th class ="text-center">preço</th>
+                <th> preço</th>
+                
             </thead>
             <tbody>
             <c:forEach var="sala" items="${salas}">
                 <tr>
                     <td class="text-center">${sala.nome}</td>
+                    <td class ="text-center">${sala.preco }</td>
+                    <td>${filme.preco}</td>
+                    
                     <td class="col-md-1">
                         <a href="/admin/sala/${sala.id}/sessoes/" class="btn btn-primary">
                             <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Sessões
