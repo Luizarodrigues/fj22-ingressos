@@ -48,7 +48,7 @@
 	            <span id="avaliacao">${detalhes.avaliacao}</span>
 	        </div>
 
-			</-- <sec:authorize access="hasRole('COMPRADOR')"> -->
+			<%-- <sec:authorize access="hasRole('COMPRADOR')"> --%>
 				<table class="table table-hover">
 					<thead>
 						<th>Sala</th>
@@ -61,7 +61,7 @@
 								<td>${sessao.sala.nome}</td>
 								<td>${sessao.horario}</td>
 								<td>
-									<a href="/sessao/${sessao.id}/lugares" class="btn">
+									<a href="/compra/sessao/${sessao.id}/lugares" class="btn">
 										Comprar
 										<span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
 									</a>
@@ -70,7 +70,7 @@
 						</c:forEach>
 					</tbody>
 				</table>
-			</-- </sec:authorize> -->
+			<%-- </sec:authorize> --%>
 		</div>
     </jsp:body>
 </ingresso:template>
